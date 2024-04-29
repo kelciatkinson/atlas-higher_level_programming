@@ -3,9 +3,11 @@ import random
 number = random.randint(-10000, 10000)
 last_digit = str(number)[-1]
 print(f"Last digit of {number} is", end = " ")
-if (number < 0):
-    print(f"-{last_digit}", end = " ")
+
+if (number == 0 or number > 0):
+    print(f"{last_digit}", end = " ")
 else:
+    last_digit = -abs(int(last_digit))
     print(f"{last_digit}", end = " ")
 last_digit = int(last_digit)
 if (last_digit > 5):
