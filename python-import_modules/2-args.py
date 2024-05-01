@@ -5,7 +5,7 @@ import sys
 if __name__ == "__main__":
     number_of_arg = len(sys.argv) - 1
     if number_of_arg == 0:
-        print("{} arguments:".format(number_of_arg))
+        print("{} arguments.".format(number_of_arg))
     elif number_of_arg == 1:
         print("{} argument:".format(number_of_arg))
         print("{}: {}".format((number_of_arg), sys.argv[1]))
