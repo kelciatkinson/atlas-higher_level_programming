@@ -6,5 +6,6 @@ def replace_in_list(my_list, idx, element):
         return my_list
     else:
         my_list.insert(idx, element)
-        new_list = my_list.pop(idx+1)
-        return new_list
+        my_list.pop(idx+1)
+        return(my_list)
+
