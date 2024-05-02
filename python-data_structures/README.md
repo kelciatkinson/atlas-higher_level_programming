@@ -94,8 +94,55 @@ guillaume@ubuntu:~/$ ./3-main.py
 guillaume@ubuntu:~/$ 
 
 ## 4-new_in_list.py
+Write a function that replaces an element in a list at a specific position without modifying the original list.
+
+Prototype: def new_in_list(my_list, idx, element):
+If idx is negative, the function should return a copy of the original list
+If idx is out of range (> of number of element in my_list), the function should return a copy of the original list
+You are not allowed to import any module
+You are not allowed to use try/except
+guillaume@ubuntu:~/$ cat 4-main.py
+#!/usr/bin/python3
+new_in_list = __import__('4-new_in_list').new_in_list
+
+my_list = [1, 2, 3, 4, 5]
+idx = 3
+new_element = 9
+new_list = new_in_list(my_list, idx, new_element)
+
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/$ ./4-main.py
+[1, 2, 3, 9, 5]
+[1, 2, 3, 4, 5]
+guillaume@ubuntu:~/$ 
 
 ## 5-no_c.py
+Write a function that removes all characters c and C from a string.
+
+Prototype: def no_c(my_string):
+The function should return the new string
+You are not allowed to import any module
+You are not allowed to use str.replace()
+guillaume@ubuntu:~/$ cat 5-main.py
+#!/usr/bin/python3
+no_c = __import__('5-no_c').no_c
+
+print(no_c("Best School"))
+print(no_c("Chicago"))
+print(no_c("C is fun!"))
+
+guillaume@ubuntu:~/$ ./5-main.py
+Best Shool
+hiago
+ is fun!
+guillaume@ubuntu:~/$ 
+Repo:
+
+GitHub repository: atlas-higher_level_programming
+Directory: python-data_structures
+File: 5-no_c.py
 
 ## 6-print_matrix_integer.py
 
