@@ -5,6 +5,7 @@ def new_in_list(my_list, idx, element):
     elif idx > len(my_list)-1:
         return my_list
     else:
-        my_list.insert(idx, element)
-        my_list.pop(idx+1)
-        return my_list
+        new_list = my_list.copy()
+        new_list.insert(idx, element)
+        new_list.pop(idx+1)
+        return new_list
