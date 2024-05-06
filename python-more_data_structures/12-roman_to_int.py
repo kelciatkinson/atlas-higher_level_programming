@@ -9,9 +9,7 @@ def roman_to_int(roman_string):
                 "I": 1
                 }
     total = 0
-    if not roman_string or roman_string is None:
-        return 0
-    else:
+    try:
         for i in range(len(roman_string)):
             if i == len(roman_string) - 1:
                 total += numerals[roman_string[i]]
@@ -20,4 +18,6 @@ def roman_to_int(roman_string):
                 total -= numerals[roman_string[i]]
             else:
                 total += numerals[roman_string[i]]
-        return total
+    except TypeError:
+        pass
+    return total
