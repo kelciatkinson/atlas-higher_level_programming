@@ -1,5 +1,6 @@
 # atlas-higher_level_programming
 
+## python-classes
 +-------------+-----------------------------------------------------------------------+
 | 0-square.py | Write an empty class Square that defines a square                     |
 +-------------+-----------------------------------------------------------------------+
