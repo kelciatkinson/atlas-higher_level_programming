@@ -1,7 +1,13 @@
 # atlas-higher_level_programming
 
 ## python-classes
+| Column Title | Column Title |
+| --- | --- |
+| Info | Info |
+| Info | Info |
 
+| Column Title | Column Title |
+| --- | --- |
 | 0-square.py | Write an empty class Square that defines a square                     |
 
 | 1-square.py | Write a class Square that defines a square by: (based on 0-square.py) |
