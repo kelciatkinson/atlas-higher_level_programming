@@ -14,6 +14,6 @@ def matrix_divided(matrix, div):
     if not isinstance(div, int):
         raise TypeError("div must be a number")
     if div == 0:
-        raise ZeroDivisionError("division bt zero")
+        raise ZeroDivisionError("division by zero")
     new_matrix = [[round(int/div, 2) for int in list] for list in matrix]
     return new_matrix
