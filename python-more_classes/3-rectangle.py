@@ -56,7 +56,7 @@ class Rectangle:
         rows and columns determined by the width/height attribute"""
         rect = ""
         if self.perimeter == 0:
-            return rect
+            return
         for i in range(1, self.__height + 1):
             for j in range(1, self.__width + 1):
                 rect += "#"
