@@ -64,4 +64,5 @@ class Rectangle:
     def __repr__(self):
         """returns a string that describes the pointer
         of the rectangle by default"""
-        return "{}({}, {})".format(type(self).__name__, self.__width, self.__height)
+        return "{}({}, {})".format(type(self).__name__,
+                                   self.__width, self.__height)
