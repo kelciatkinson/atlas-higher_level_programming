@@ -46,16 +46,13 @@ class Rectangle:
     def perimeter(self):
         """returns the public instance method perimeter,
         that is the current rectangle area"""
-        if self.__width == 0 or self.__height == 0:
-            self.perimeter = 0
-            return 0
         return self.__width * 2 + self.__height * 2
 
     def __str__(self):
         """prints a rectangle made of # with x number of
         rows and columns determined by the width/height attribute"""
         rect = ""
-        if self.perimeter == 0:
+        if self.__width == 0 or self.__height == 0:
             return
         for i in range(1, self.__height + 1):
             for j in range(1, self.__width + 1):
