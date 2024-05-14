@@ -32,7 +32,7 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        """prints a square made of # with x number of 
+        """prints a square made of # with x number of
         rows and columns determined by the size attribute"""
         if self.__size == 0:
             print()
