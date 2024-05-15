@@ -5,9 +5,9 @@
 class Rectangle:
     """does nothing yet, code will be wrriten later"""
     def __init__(self, width=0, height=0):
-        self.__width = width
+        self.width = width
         """private instance attribute width"""
-        self.__height = height
+        self.height = height
         """private instance attribute height"""
 
     @property
