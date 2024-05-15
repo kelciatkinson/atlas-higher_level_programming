@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""defines a new class called Square"""
+"""This module contains a class called Square."""
 
 
 class Square:
-    """does nothing yet, code will be wrriten later"""
+    """This class does nothing yet, code will be wrriten later."""
     pass

@@ -3,5 +3,10 @@
 
 
 class Rectangle:
-    """does nothing yet, code will be wrriten later"""
+    """does nothing yet, code will be wrriten later
+    
+    Args:
+    
+    Returns:
+    """
     pass

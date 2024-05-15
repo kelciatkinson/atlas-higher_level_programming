@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-"""defines a new class called Square"""
+"""This module contains a class called Square."""
 
 
 class Square:
-    """defines a Square and has private
-    instance attribute size"""
+    """This class defines a Square.
+    
+    Attributes:
+        size (int): private instance attribute of Square
+    """
     def __init__(self, size):
         self.__size = size
