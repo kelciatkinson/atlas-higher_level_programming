@@ -54,6 +54,8 @@ class Square:
         rows and columns determined by the size attribute"""
         if self.__size == 0:
             print()
+            return
+
         if self.__position[1] > 0:
             for i in range(self.__position[1]):
                 print("")
