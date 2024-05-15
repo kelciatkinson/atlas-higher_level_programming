@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """this module contains a text indentation function"""
 
+
 def text_indentation(text):
+    """splits up a piece of text & adds new lines after special punctuation"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
