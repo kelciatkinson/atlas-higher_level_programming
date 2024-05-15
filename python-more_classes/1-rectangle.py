@@ -3,12 +3,10 @@
 
 
 class Rectangle:
-    """does nothing yet, code will be wrriten later"""
+    """initializes Rectangle"""
     def __init__(self, width=0, height=0):
         self.width = width
-        """private instance attribute width"""
         self.height = height
-        """private instance attribute height"""
 
     @property
     def width(self):

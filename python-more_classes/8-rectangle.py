@@ -3,15 +3,13 @@
 
 
 class Rectangle:
-    """does nothing yet, code will be wrriten later"""
+    """initializes Rectangle"""
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        self.__width = width
-        """private instance attribute width"""
-        self.__height = height
-        """private instance attribute height"""
+        self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     @property
