@@ -1,12 +1,18 @@
 #!/usr/bin/python3
-"""defines a new class called Square"""
+"""This module contains a class called Square."""
 
 
 class Square:
-    """defines a Square"""
+    """This class defines a Square.
+
+    Attributes:
+        size (int): private instance attribute representation of Square.
+    """
     def __init__(self, size=0):
         self.__size = size
-        """private instance attribute size"""
+        """Initializes an instance of Square with a given size.
+        The given size must be a non-negative integer
+        or the appropriate error will be raised."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
