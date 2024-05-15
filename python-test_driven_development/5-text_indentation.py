@@ -20,5 +20,5 @@ def text_indentation(text):
             new_text += character
             space = False
 
-    for line in new_text.split("\n"):
-        print("".join(line.strip()))
+    lines = "\n".join(line.strip() for line in new_text.split("\n"))
+    print(lines, end="")
