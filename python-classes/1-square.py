@@ -4,7 +4,7 @@
 
 class Square:
     """This class defines a Square.
-    
+
     Attributes:
         size (int): private instance attribute representation of Square.
     """
