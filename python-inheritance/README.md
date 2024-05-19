@@ -2,7 +2,7 @@
 
 | File Name | Definition |
 | --- | --- |
-| 0-lookup.py | Write an empty class Square that defines a square |
+| 0-lookup.py | Returns the list of available attributes and methods of an object |
 | 1-my_list.py | Write a class Square that defines a square by: (based on 0-square.py) |
 | 2-is_same_class.py | Write a class Square that defines a square by: (based on 1-square.py) |
 | 3-is_kind_of_class.py | Write a class Square that defines a square by: (based on 2-square.py) |
