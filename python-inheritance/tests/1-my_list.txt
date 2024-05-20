@@ -1,7 +1,10 @@
 >>> my_list = __import__('1-my_list').my_list
 
->>> my_list[1, 2, 3]
-[1, 2, 3]
+>>> my_list.__str__
+
+>>> my_list.append(5)
+
+>>> my_list.print_sorted([3, 2, 1])
 
 if __name__ == "__main__":
     import doctest
