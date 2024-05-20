@@ -1,4 +1,4 @@
->>> my_list = __import__('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 
 >>> my_list = MyList()
 >>> my_list.append(1)
@@ -12,3 +12,4 @@
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
