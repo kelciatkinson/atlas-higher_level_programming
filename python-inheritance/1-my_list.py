@@ -9,5 +9,4 @@ class MyList(list):
 
     def print_sorted(self): 
         """sorts and prints a given list"""
-        new_list = list.sort(self)
-        return new_list
+        print(sorted(self))
