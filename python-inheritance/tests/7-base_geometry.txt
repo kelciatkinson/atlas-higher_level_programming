@@ -18,7 +18,7 @@ ValueError: age must be greater than 0
 Traceback (most recent call last):
     ...
 ValueError: distance must be greater than 0
-
+>>>integer_validator(“age”, 1)
 
 >>> bg.area()
 Traceback (most recent call last):
