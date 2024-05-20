@@ -8,6 +8,6 @@ class MyList(list):
         """instance of MyList"""
         super().__init__()
 
-    def print_sorted(self): 
+    def print_sorted(self):
         """sorts and prints a given list"""
         print(sorted(self))
