@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module contains the class MyList"""
 
+
 class MyList(list):
     """This class inherits from list"""
     def __init__(self):
