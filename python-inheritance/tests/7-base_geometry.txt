@@ -2,6 +2,8 @@
 
 >>> bg = BaseGeometry()
 
+>>> bg.integer_validator()
+
 >>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
     ...
