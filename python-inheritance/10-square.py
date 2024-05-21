@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """This module defines the class Square"""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(BaseGeometry):
+class Square(Rectangle):
     """This class creates a new object Square"""
     def __init__(self, size):
         self.__size = size
