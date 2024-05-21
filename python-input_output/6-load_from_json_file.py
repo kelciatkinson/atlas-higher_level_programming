@@ -4,5 +4,6 @@ import json
 
 
 def load_from_json_file(filename):
-    """This function writes an object to a text
-    file, using a JSON representation"""
+    """This function creates an object from a JSON file"""
+    with open(filename, "r") as file:
+        return json.load(file)
