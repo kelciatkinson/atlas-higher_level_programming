@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """This module defines the class Rectangle"""
-
-
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
 class Rectangle(BaseGeometry):
     """This class creates a new object Rectangle"""
     def __init__(self, width, height):
