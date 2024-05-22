@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-""" My class module
-"""
+"""This module defines the MyClass function"""
 
 class MyClass:
-    """ My class
-    """
-
     def __init__(self, name):
+        """Instance method of MyClass"""
         self.name = name
         self.number = 0
 
