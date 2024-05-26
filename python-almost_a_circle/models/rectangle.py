@@ -12,15 +12,15 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
-        #calling the getter and setter methods
+        # calling the getter and setter methods
 
     @property
-    #getter method
+    # getter method
     def width(self):
         return self.__width
-    
+
     @width.setter
-    #setter method
+    # setter method
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
