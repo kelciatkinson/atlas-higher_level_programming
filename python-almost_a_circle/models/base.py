@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Documentation"""
+"""Documentation will be ammended"""
 
 
 class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Documentation will be ammended"""
         if id is not None:
             self.id = id
         else:
