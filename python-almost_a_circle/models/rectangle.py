@@ -65,4 +65,5 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
+        """this methos returns the area of the Rectangle instance"""
         return self.height * self.width
