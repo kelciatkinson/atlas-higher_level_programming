@@ -69,8 +69,13 @@ class Rectangle(Base):
         return self.height * self.width
 
     def display(self):
-        """this method prints the Rectangle instance with the character #"""
+        """this method prints a newline y times, and a space x times
+        then the Rectangle instance with the character #"""
+        for i in range(self.y):
+            print()
         for i in range(self.height):
+            for n in range(self.x):
+                print(" ", end="")
             for j in range(self.__width):
                 print("#", end="")
             if i != self.__height:
