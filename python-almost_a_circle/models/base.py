@@ -28,11 +28,12 @@ class Base:
         """this method writes the JSON string representation
         of list_objs to a file"""
         json_str = []
-        if list_objs is not None:
-            with open("{}.json".format(cls.__name__), "w") as file:
+        with open("{}.json".format(cls.__name__), "w") as file:
+            if list_objs is None:
+                return file.write([])
+            else:
                 for object in list_objs:
                     json_str.append(object.to_dictionary())
                 json_str = cls.to_json_string(json_str)
                 return file.write(json_str)
-        else:
-            return []
+
