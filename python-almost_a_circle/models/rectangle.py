@@ -99,7 +99,7 @@ class Rectangle(Base):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        """this methos returns a dictionary representation of attributes"""
+        """this method returns a dictionary representation of attributes"""
         attributes = ["id", "width", "height", "x", "y"]
         if all(type(object) is str for object in attributes):
             return {attr: getattr(self, attr)

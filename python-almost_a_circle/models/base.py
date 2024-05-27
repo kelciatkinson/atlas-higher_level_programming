@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Documentation will be ammended"""
+import json
 
 
 class Base:
@@ -13,3 +14,8 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        """this method returns JSON string representation
+        of list_dictionaries"""
+        return json.dumps(list_dictionaries)
