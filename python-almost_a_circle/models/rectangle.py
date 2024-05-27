@@ -84,7 +84,8 @@ class Rectangle(Base):
     def __str__(self):
         """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         return ("[{}] ({}) {}/{} - {}/{}"
-                .format(self.__class__.__name__, self.id, self.x, self.y, self.width, self.height))
+                .format(self.__class__.__name__,
+                        self.id, self.x, self.y, self.width, self.height))
 
     def update(self, *args, **kwargs):
         """this method assigns an argument to each attribute"""
@@ -100,6 +101,7 @@ class Rectangle(Base):
     def to_dictionary(self):
         """this methos returns a dictionary representation of attributes"""
         attributes = ["id", "width", "height", "x", "y"]
-        if all(type(object) == str for object in attributes): 
-                return {attr: getattr(self, attr) for attr in attributes if hasattr(self, attr)}
+        if all(type(object) is str for object in attributes):
+            return {attr: getattr(self, attr)
+                    for attr in attributes if hasattr(self, attr)}
         return self.__dict__
