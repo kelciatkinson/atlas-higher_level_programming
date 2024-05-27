@@ -90,7 +90,16 @@ class Rectangle(Base):
         """this method assigns an argument to each attribute"""
         attributes = ["id", "width", "height", "x", "y"]
         if args:
-            for key, value in kwargs.items():
-                setattr(self, key, value)
+            for i, arg in enumerate(args):
+                setattr(self, attributes[i], arg)
         else:
-            return
+            for key, value in kwargs.items():
+                if key in attributes:
+                    setattr(self, key, value)
+
+    def to_dictionary(self):
+        """this methos returns a dictionary representation of attributes"""
+        attributes = ["id", "width", "height", "x", "y"]
+        if all(type(object) == str for object in attributes): 
+                return {attr: getattr(self, attr) for attr in attributes if hasattr(self, attr)}
+        return self.__dict__
