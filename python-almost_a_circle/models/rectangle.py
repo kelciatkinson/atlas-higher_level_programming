@@ -88,8 +88,8 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """this method assigns an argument to each attribute"""
-        if not args:
-            # change this back to NO conditional if i broke this at the end
+        attributes = ["id", "width", "height", "x", "y"]
+        if args:
             for key, value in kwargs.items():
                 setattr(self, key, value)
         else:
