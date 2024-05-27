@@ -101,7 +101,4 @@ class Rectangle(Base):
     def to_dictionary(self):
         """this method returns a dictionary representation of attributes"""
         attributes = ["id", "width", "height", "x", "y"]
-        if all(type(object) is str for object in attributes):
-            return {attr: getattr(self, attr)
-                    for attr in attributes if hasattr(self, attr)}
-        return self.__dict__
+        return {attr: getattr(self, attr) for attr in attributes}
