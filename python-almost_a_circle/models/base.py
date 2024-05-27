@@ -36,4 +36,3 @@ class Base:
                     json_str.append(object.to_dictionary())
                 json_str = cls.to_json_string(json_str)
                 return file.write(json_str)
-
