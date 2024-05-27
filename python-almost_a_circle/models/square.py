@@ -30,7 +30,6 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """this method assigns an argument to each attribute"""
-            # change this back to NO conditional if i broke this at the end
         attributes = ["id", "size", "x", "y"]
         if args:
             for i, arg in enumerate(args):
