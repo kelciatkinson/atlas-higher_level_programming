@@ -48,3 +48,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """this method return an instance with all attributes already set"""
+        object = cls(1, 2, 1, 2)
+
+        return object.update(cls, **dictionary)
+
