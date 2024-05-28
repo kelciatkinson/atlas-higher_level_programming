@@ -48,6 +48,9 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """this method return an instance with all attributes already set"""
-        object = cls(1, 2)
+        if cls.__name__ == "Rectangle":
+            object = cls(1, 2)
+        else:
+            object = cls(1)
         object.update(**dictionary)
         return object
