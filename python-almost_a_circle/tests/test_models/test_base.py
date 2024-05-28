@@ -8,7 +8,8 @@ from models.base import Base
 class Test_Base(unittest.TestCase):
 
     def test_BaseID(self):
-        self.assertIsNotNone(Base().id)
+        obj = Base()
+        self.assertEqual(obj.id, 1)
 
 if __name__ == "__main__":
     unittest.main()
