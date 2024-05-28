@@ -67,5 +67,5 @@ class Base:
                 instance = cls.create(**dict)
                 instances.append(instance)
             return instances
-        except:
+        except FileNotFoundError:
             return []
