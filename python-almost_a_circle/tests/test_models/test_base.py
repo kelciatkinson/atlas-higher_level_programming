@@ -9,7 +9,7 @@ class Test_Base(unittest.TestCase):
 
     def test_BaseID(self):
         obj = Base()
-        self.assertTrue(obj)
+        self.assertIsNotNone(obj.id)
 
 if __name__ == "__main__":
     unittest.main()
