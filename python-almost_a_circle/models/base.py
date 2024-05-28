@@ -58,14 +58,14 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """this method returns a list of instances from json file"""
-        filename = "{}.json".format(cls.__name__)
-        with open(filename, "r") as file:
-            if not filename:
-                return []
-            json_string = file.read()
-        dictionaries = cls.from_json_string(json_string)
-        instances = []
-        for dict in dictionaries:
-            instance = cls.create(**dict)
-            instances.append(instance)
-        return instances
+        try:
+            with open("{}.json".format(cls.__name__), "r") as file:
+                json_string = file.read()
+            dictionaries = cls.from_json_string(json_string)
+            instances = []
+            for dict in dictionaries:
+                instance = cls.create(**dict)
+                instances.append(instance)
+            return instances
+        except:
+            return []
