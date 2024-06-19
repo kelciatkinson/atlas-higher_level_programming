@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" """
+"""Here is some documentation"""
 import MySQLdb
 from sys import argv
 
 
 if __name__ == "__main__":
+    """This is so the file will not be executed when imported"""
 
     db = MySQLdb.connect(
         host="localhost",
