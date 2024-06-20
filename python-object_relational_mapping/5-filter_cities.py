@@ -30,6 +30,8 @@ if __name__ == "__main__":
 
     if cities:
         print(", ".join(cities))
+    else:
+        print("")
 
     cur.close()
     db.close()
