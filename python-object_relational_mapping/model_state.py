@@ -9,9 +9,11 @@ Base = declarative_base()
 
 class State(Base):
     """Class State inherits from Base"""
+
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
+
 
 if __name__ == "__main__":
     """Does not execute if imported"""
