@@ -18,10 +18,11 @@ if __name__ == "__main__":
 
     state_name = sys.argv[4]
 
-    state = session.query(State).filter(State.name == state_name).all()
+    states = session.query(State).filter(State.name == state_name).first()
 
-    if state:
-        print("{}".format(state.id))
+    if states:
+        for state in states:
+            print("{}".format(state.id))
     else:
         print("Not found")
 
