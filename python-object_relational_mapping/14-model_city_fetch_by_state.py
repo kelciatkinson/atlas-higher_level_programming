@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
     session = Session()
 
-    cities = session.query(City, State).join(State).order_by(City.id).all()
+    cities = session.query(City, State).filter(City.state_id == State.id).all()
 
     if cities:
         for city, state in cities:
