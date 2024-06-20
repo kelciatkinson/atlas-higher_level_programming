@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Here is documentation"""
 import sys
-from SQLAlchemy import create_engine, declarative_base
+from sqlalchemy import create_engine, declarative_base
 from sqlalchemy import Column, Integer, String
 
 
