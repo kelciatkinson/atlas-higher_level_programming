@@ -29,7 +29,7 @@ if __name__ == "__main__":
         cities.append(row[0])
 
     if cities:
-        print("".join(cities))
+        print(", ".join(cities))
 
     cur.close()
     db.close()
