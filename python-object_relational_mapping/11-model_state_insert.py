@@ -22,7 +22,6 @@ if __name__ == "__main__":
     
     session.commit()
 
-    for state in states:
-        print("{}".format(states.id))
+    print("{}".format(states.id))
 
     session.close()
