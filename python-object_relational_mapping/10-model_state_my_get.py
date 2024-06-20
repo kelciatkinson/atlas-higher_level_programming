@@ -16,9 +16,7 @@ if __name__ == "__main__":
 
     session = Session()
 
-    state_name = sys.argv[4]
-
-    states = session.query(State).filter(State.name == state_name).first()
+    states = session.query(State).filter(State.name == argv[4]).first()
 
     if states:
         for state in states:
