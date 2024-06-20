@@ -19,6 +19,8 @@ if __name__ == "__main__":
     new_state = State(name="Louisiana")
 
     states = session.add(new_state)
+    
+    session.commit()
 
     for state in states:
         print("{}".format(states.id))
