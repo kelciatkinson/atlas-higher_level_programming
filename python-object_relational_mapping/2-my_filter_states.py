@@ -17,7 +17,8 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT id, name FROM states WHERE name = '{}'".format(argv[4]))
+    cur.execute("SELECT id, name"
+                "FROM states WHERE name = '{}'".format(argv[4]))
 
     rows = cur.fetchall()
 
