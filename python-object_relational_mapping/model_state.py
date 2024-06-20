@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """Here is documentation"""
 import sys
-from model_state import Base, State
-from sqlalchemy import create_engine, declarative_base
+from SQLAlchemy import create_engine, declarative_base
 from sqlalchemy import Column, Integer, String
 
 
