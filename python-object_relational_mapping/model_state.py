@@ -7,9 +7,9 @@ from sqlalchemy import Column, Integer, String, create_engine
 
 Base = declarative_base()
 
+
 class State(Base):
     """Class State inherits from Base"""
-
 
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
