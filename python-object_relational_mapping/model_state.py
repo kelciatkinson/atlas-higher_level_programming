@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Here is documentation"""
 import sys
-from sqlalchemy import create_engine, declarative_base
-from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, create_engine
 
 
 Base = declarative_base()
