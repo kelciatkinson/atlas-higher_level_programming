@@ -1,13 +1,1 @@
-{
-	"folders": [
-		{
-			"name": "atlas-higher_level_programming",
-			"path": ".."
-		},
-		{
-			"name": "ubuntu",
-			"path": "../../../../workspaces/ubuntu"
-		}
-	],
-	"settings": {}
-}
+#!/usr/bin/node
