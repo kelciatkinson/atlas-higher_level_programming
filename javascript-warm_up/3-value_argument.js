@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 // print 1st argument
 if (process.argv[2] == null) {
   console.log('No argument');
